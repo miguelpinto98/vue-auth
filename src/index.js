@@ -14,7 +14,8 @@ module.exports = (function () {
         var register = auth.register;
         var loginOther = auth.loginOther;
         var logoutOther = auth.logoutOther;
-
+        
+        Vue.$auth = auth;
         Object.defineProperties(Vue.prototype, {
             $auth: {
                 get: function () {
